@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/steven166/angular-rest-client/branch/master/graph/badge.svg)](https://codecov.io/gh/steven166/angular-rest-client)
 
 # angular-rest-client
-Angular 5 HTTP client with Typescript Declarative Annotations, Observables, Interceptors and Timeouts.
+Angular 6 HTTP client with Typescript Declarative Annotations, Observables, Interceptors and Timeouts.
 This package is production ready.
 
 ## Installation
