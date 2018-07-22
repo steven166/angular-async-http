@@ -1,66 +1,57 @@
 {
-  "name": "angular-rest-client",
-  "version": "2.0.0",
-  "description": "Angular 5 HTTP client with Typescript Declarative Annotations, Observables, Interceptors and Timeouts.",
-  "main": "index.js",
+  "name": "angular-rest",
+  "version": "0.0.0",
   "scripts": {
-    "setup": "yarn --freeze-lockfile",
-    "test": "node_modules/.bin/gulp test",
-    "watch": "node_modules/.bin/gulp default",
-    "prepublish": "node_modules/.bin/gulp prepublish",
-    "codecov": "./node_modules/.bin/codecov"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "build lib": "ng build angular-rest-client",
+    "lint lib": "ng lint angular-rest-client",
+    "test lib": "ng test angular-rest-client"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/steven166/angular-rest-client.git"
-  },
-  "keywords": [
-    "angular5",
-    "angulario",
-    "http",
-    "rest",
-    "client"
-  ],
-  "author": "Steven Hermans <s.hermans@maxxton.com>",
-  "contributors": [
-    {
-      "name": "Mayur Patel <mayur-novus>"
-    }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/steven166/angular-rest-client/issues"
-  },
-  "homepage": "https://github.com/steven166/angular-rest-client#readme",
+  "private": true,
   "dependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "rxjs": "5.5.0",
-    "zone.js": "0.8.4"
+    "@angular/common": "^6.0.3",
+    "@angular/core": "^6.0.3",
+    "@angular/http": "^6.0.3",
+    "@angular/platform-browser": "^6.0.3",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular/compiler": "^5.0.0",
-    "@types/chai": "^3.4.34",
-    "@types/jasmine": "^2.5.41",
-    "@types/node": "^6.0.45",
-    "async": "^2.1.1",
-    "chai": "^3.5.0",
-    "codecov": "^3.0.0",
-    "codelyzer": "^2.0.1",
-    "del": "^2.2.2",
-    "gaze": "^1.1.2",
-    "gulp": "^3.9.0",
-    "gulp-html-extend": "^1.1.6",
-    "gulp-istanbul": "^1.1.2",
-    "gulp-mocha": "^3.0.1",
-    "gulp-replace": "^0.5.4",
-    "gulp-typescript": "3.1.3",
-    "gulp-util": "^3.0.7",
-    "merge2": "^1.0.2",
-    "ts-node": "^2.0.0",
-    "tslint": "^4.3.0",
-    "typescript": "^2.6.2",
-    "vinyl-paths": "^2.1.0"
+    "@angular-devkit/build-angular": "~0.6.8",
+    "@angular-devkit/build-ng-packagr": "~0.6.8",
+    "@angular/animations": "^6.0.3",
+    "@angular/cli": "~6.0.8",
+    "@angular/compiler": "^6.0.3",
+    "@angular/compiler-cli": "^6.0.3",
+    "@angular/forms": "^6.0.3",
+    "@angular/language-service": "^6.0.3",
+    "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/router": "^6.0.3",
+    "@types/jasmine": "~2.8.6",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "core-js": "^2.5.4",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "~1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "ng-packagr": "^3.0.0-rc.2",
+    "ts-node": "~5.0.1",
+    "tsickle": ">=0.25.5",
+    "tslib": "^1.7.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.7.2"
   }
 }
