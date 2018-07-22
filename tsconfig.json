@@ -1,43 +1,28 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
     "declaration": false,
-    "removeComments": true,
-    "noLib": false,
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [
-      "es2015",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ],
-    "sourceMap": true,
-    "pretty": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": true,
+    "target": "es5",
     "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules"
+      "node_modules/@types"
     ],
-    "types": [
-      "node"
-    ]
-  },
-  "files": [
-    "gulpfile.ts",
-  ],
-  "exclude": [
-    "desktop",
-    "node_modules",
-    "dist",
-    "src"
-  ],
-  "compileOnSave": false
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "angular-rest-client": [
+        "dist/angular-rest-client"
+      ],
+      "angular-rest-client/*": [
+        "dist/angular-rest-client/*"
+      ]
+    }
+  }
 }

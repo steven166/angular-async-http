@@ -34,3 +34,5 @@ node_modules
 
 
 *.js
+!/projects/angular-rest-client/karma.conf.js
+!/src/karma.conf.js
