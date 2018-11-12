@@ -69,11 +69,11 @@ export class TodoClient extends RestClient {
     @Headers({
         'content-type': 'application/json'
     })
-    public postTodo( @Body todo: Todo): Observable<Response> { return null; };
+    public postTodo( @Body('') todo: Todo): Observable<Response> { return null; };
 
     @Put("todo/{id}")
     @Timeout(2000) //In milliseconds
-    public putTodoById( @Path("id") id: string, @Body todo: Todo): Observable<Response> { return null; };
+    public putTodoById( @Path("id") id: string, @Body('') todo: Todo): Observable<Response> { return null; };
 
     @Delete("todo/{id}")
     @Timeout(2000) //In milliseconds
@@ -166,7 +166,7 @@ export class ToDoCmp {
 - `@Path(name: string, value?:any|{value?:any})`
 - `@Query(name: string, value?:any|{value?:any,format?:string})`
 - `@Header(name: string, value?:any|{value?:any,format?:string})`
-- `@Body`
+- `@Body('')`
 
 #### Collection Format
 Determines the format of the array if type array is used. (used for ``@Query`` and ``@Header``) Possible values are:
